@@ -829,9 +829,9 @@
 		9FA8E15F1219E42F00415299 /* ImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8E1591219E42F00415299 /* ImageScrollView.m */; };
 		9FA8E1601219E42F00415299 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8E15B1219E42F00415299 /* PhotoViewController.m */; };
 		9FA8E1611219E42F00415299 /* TilingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8E15D1219E42F00415299 /* TilingView.m */; };
+		B6152BC5156AC8A000F12496 /* README.textile in Resources */ = {isa = PBXBuildFile; fileRef = B6152BC4156AC8A000F12496 /* README.textile */; };
 		C9A438F211ADDDAC00EF1D55 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A438F111ADDDAC00EF1D55 /* QuartzCore.framework */; };
 		CB031AE711B9507100B70177 /* ImageData.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB031AE611B9507100B70177 /* ImageData.plist */; };
-		CB6BD25011FF733900FF3374 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB6BD24311FF733900FF3374 /* ReadMe.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1663,9 +1663,9 @@
 		9FA8E15B1219E42F00415299 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		9FA8E15C1219E42F00415299 /* TilingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TilingView.h; sourceTree = "<group>"; };
 		9FA8E15D1219E42F00415299 /* TilingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TilingView.m; sourceTree = "<group>"; };
+		B6152BC4156AC8A000F12496 /* README.textile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.textile; sourceTree = "<group>"; };
 		C9A438F111ADDDAC00EF1D55 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CB031AE611B9507100B70177 /* ImageData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ImageData.plist; sourceTree = "<group>"; };
-		CB6BD24311FF733900FF3374 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		CB6BD26C11FF73C200FF3374 /* PhotoScroller-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PhotoScroller-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1695,7 +1695,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				CB6BD24311FF733900FF3374 /* ReadMe.txt */,
+				B6152BC4156AC8A000F12496 /* README.textile */,
 				9FA8E1551219E42F00415299 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -2641,7 +2641,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB031AE711B9507100B70177 /* ImageData.plist in Resources */,
-				CB6BD25011FF733900FF3374 /* ReadMe.txt in Resources */,
 				9FA8DAF21219E2F500415299 /* MainWindow.xib in Resources */,
 				9FA8DAF31219E2F500415299 /* PhotoViewController.xib in Resources */,
 				9FA8DE231219E32D00415299 /* Default.png in Resources */,
@@ -3456,6 +3455,7 @@
 				9FA8E14C1219E32E00415299 /* Tree_500_6_8.png in Resources */,
 				9FA8E14D1219E32E00415299 /* Tree_500_6_9.png in Resources */,
 				9FA8E14E1219E32E00415299 /* iTunesArtwork in Resources */,
+				B6152BC5156AC8A000F12496 /* README.textile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

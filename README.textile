@@ -45,4 +45,4 @@ h2. Changes From Previous Versions
 * 1.1 Added autorotation.
 * 1.0 Initial version published.
 
-p{font-size: 13px; color: #777; padding-top: 4px; border-top: 1px solid #777}. Copyright (C) 2010 Apple Inc. All rights reserved.
+Copyright (C) 2010 Apple Inc. All rights reserved.
