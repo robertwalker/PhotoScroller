@@ -2577,10 +2577,10 @@
 			children = (
 				9FA8E1561219E42F00415299 /* AppDelegate.h */,
 				9FA8E1571219E42F00415299 /* AppDelegate.m */,
-				9FA8E1581219E42F00415299 /* ImageScrollView.h */,
-				9FA8E1591219E42F00415299 /* ImageScrollView.m */,
 				9FA8E15A1219E42F00415299 /* PhotoViewController.h */,
 				9FA8E15B1219E42F00415299 /* PhotoViewController.m */,
+				9FA8E1581219E42F00415299 /* ImageScrollView.h */,
+				9FA8E1591219E42F00415299 /* ImageScrollView.m */,
 				9FA8E15C1219E42F00415299 /* TilingView.h */,
 				9FA8E15D1219E42F00415299 /* TilingView.m */,
 			);

@@ -47,10 +47,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ImageScrollView : UIScrollView <UIScrollViewDelegate> {
-    UIView        *imageView;
-    NSUInteger     index;
-}
+@interface ImageScrollView : UIScrollView
+
 @property (assign) NSUInteger index;
 
 - (void)displayImage:(UIImage *)image;

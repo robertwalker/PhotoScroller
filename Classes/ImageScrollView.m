@@ -48,7 +48,15 @@
 #import "ImageScrollView.h"
 #import "TilingView.h"
 
+@interface ImageScrollView () <UIScrollViewDelegate>
+
+@end
+
 @implementation ImageScrollView
+{
+    UIView        *imageView;
+}
+
 @synthesize index;
 
 - (id)initWithFrame:(CGRect)frame

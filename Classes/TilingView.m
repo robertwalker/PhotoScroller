@@ -48,8 +48,18 @@
 #import "TilingView.h"
 #import <QuartzCore/CATiledLayer.h>
 
+@interface TilingView ()
+
+- (UIImage *)tileForScale:(CGFloat)scale row:(int)row col:(int)col;
+
+@end
 
 @implementation TilingView
+{
+    NSString *imageName;
+    BOOL      annotates;
+}
+
 @synthesize annotates;
 
 + (Class)layerClass {
