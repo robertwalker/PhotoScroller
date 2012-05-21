@@ -16,7 +16,7 @@ This ensures that performance is at its maximum, especially when using high-reso
 
 h2. System Requirements
 
-iOS OS 4.0
+iOS OS 5.0
 
 h2. Packaging List
 
