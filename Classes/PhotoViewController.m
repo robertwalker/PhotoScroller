@@ -75,19 +75,11 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    [pagingScrollView release];
     pagingScrollView = nil;
-    [recycledPages release];
     recycledPages = nil;
-    [visiblePages release];
     visiblePages = nil;
 }
 
-- (void)dealloc
-{
-    [pagingScrollView release];
-    [super dealloc];
-}
 
 
 #pragma mark -
@@ -116,7 +108,7 @@
         if (![self isDisplayingPageForIndex:index]) {
             ImageScrollView *page = [self dequeueRecycledPage];
             if (page == nil) {
-                page = [[[ImageScrollView alloc] init] autorelease];
+                page = [[ImageScrollView alloc] init];
             }
             [self configurePage:page forIndex:index];
             [pagingScrollView addSubview:page];
@@ -129,7 +121,6 @@
 {
     ImageScrollView *page = [recycledPages anyObject];
     if (page) {
-        [[page retain] autorelease];
         [recycledPages removeObject:page];
     }
     return page;
@@ -255,14 +246,12 @@
         NSString *path = [[NSBundle mainBundle] pathForResource:@"ImageData" ofType:@"plist"];
         NSData *plistData = [NSData dataWithContentsOfFile:path];
         NSString *error; NSPropertyListFormat format;
-        __imageData = [[NSPropertyListSerialization propertyListFromData:plistData
+        __imageData = [NSPropertyListSerialization propertyListFromData:plistData
                                                         mutabilityOption:NSPropertyListImmutable
                                                                   format:&format
-                                                        errorDescription:&error]
-                       retain];
+                                                        errorDescription:&error];
         if (!__imageData) {
             NSLog(@"Failed to read image names. Error: %@", error);
-            [error release];
         }
     }
     return __imageData;

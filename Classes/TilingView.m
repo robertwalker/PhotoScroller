@@ -59,7 +59,7 @@
 - (id)initWithImageName:(NSString *)name size:(CGSize)size
 {
     if ((self = [super initWithFrame:CGRectMake(0, 0, size.width, size.height)])) {
-        imageName = [name retain];
+        imageName = name;
 
         CATiledLayer *tiledLayer = (CATiledLayer *)[self layer];
         tiledLayer.levelsOfDetail = 4;

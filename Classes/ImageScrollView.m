@@ -63,11 +63,6 @@
     return self;
 }
 
-- (void)dealloc
-{
-    [imageView release];
-    [super dealloc];
-}
 
 #pragma mark -
 #pragma mark Override layoutSubviews to center content
@@ -118,7 +113,6 @@
 {
     // clear the previous imageView
     [imageView removeFromSuperview];
-    [imageView release];
     imageView = nil;
     
     // reset our zoomScale to 1.0 before doing any further calculations
@@ -137,7 +131,6 @@
 {
     // clear the previous imageView
     [imageView removeFromSuperview];
-    [imageView release];
     imageView = nil;
     
     // reset our zoomScale to 1.0 before doing any further calculations
