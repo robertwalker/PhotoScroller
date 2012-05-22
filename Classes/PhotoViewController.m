@@ -79,8 +79,7 @@
     CGFloat       percentScrolledIntoFirstVisiblePage;
 }
 
-#pragma mark -
-#pragma mark View loading and unloading
+#pragma mark - View loading and unloading
 
 - (void)loadView 
 {    
@@ -109,10 +108,7 @@
     visiblePages = nil;
 }
 
-
-
-#pragma mark -
-#pragma mark Tiling and page configuration
+#pragma mark - Tiling and page configuration
 
 - (void)tilePages 
 {
@@ -181,17 +177,14 @@
     // [page displayImage:[self imageAtIndex:index]];
 }
 
-
-#pragma mark -
-#pragma mark ScrollView delegate methods
+#pragma mark - ScrollView delegate methods
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     [self tilePages];
 }
 
-#pragma mark -
-#pragma mark View controller rotation methods
+#pragma mark - View controller rotation methods
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation 
 {
@@ -235,8 +228,8 @@
     pagingScrollView.contentOffset = CGPointMake(newOffset, 0);
 }
 
-#pragma mark -
-#pragma mark  Frame calculations
+#pragma mark - Frame calculations
+
 #define PADDING  10
 
 - (CGRect)frameForPagingScrollView {
@@ -265,8 +258,7 @@
 }
 
 
-#pragma mark -
-#pragma mark Image wrangling
+#pragma mark - Image wrangling
 
 - (NSArray *)imageData {
     static NSArray *__imageData = nil; // only load the imageData array once
@@ -319,6 +311,5 @@
     }
     return __count;
 }
-
 
 @end

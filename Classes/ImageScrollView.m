@@ -71,9 +71,7 @@
     return self;
 }
 
-
-#pragma mark -
-#pragma mark Override layoutSubviews to center content
+#pragma mark - Override layoutSubviews to center content
 
 - (void)layoutSubviews 
 {
@@ -106,16 +104,14 @@
     }
 }
 
-#pragma mark -
-#pragma mark UIScrollView delegate methods
+#pragma mark - UIScrollView delegate methods
 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
 {
     return imageView;
 }
 
-#pragma mark -
-#pragma mark Configure scrollView to display new image (tiled or not)
+#pragma mark - Configure scrollView to display new image (tiled or not)
 
 - (void)displayImage:(UIImage *)image
 {
@@ -177,8 +173,7 @@
     self.minimumZoomScale = minScale;
 }
 
-#pragma mark -
-#pragma mark Methods called during rotation to preserve the zoomScale and the visible portion of the image
+#pragma mark - Methods called during rotation to preserve the zoomScale and the visible portion of the image
 
 // returns the center point, in image coordinate space, to try to restore after rotation. 
 - (CGPoint)pointToCenterAfterRotation
