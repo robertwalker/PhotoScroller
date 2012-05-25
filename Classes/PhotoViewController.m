@@ -213,6 +213,11 @@
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
     // recalculate contentSize based on current orientation
+    
+    CGRect pagingScrollViewFrame = [self frameForPagingScrollView];
+    pagingScrollView.frame = pagingScrollViewFrame;
+    
+    
     pagingScrollView.contentSize = [self contentSizeForPagingScrollView];
     
     // adjust frames and configuration of each visible page
@@ -236,7 +241,7 @@
 #define PADDING  10
 
 - (CGRect)frameForPagingScrollView {
-    CGRect frame = [[UIScreen mainScreen] bounds];
+    CGRect frame = [[self view] bounds]; //[[UIScreen mainScreen] bounds];
     frame.origin.x -= PADDING;
     frame.size.width += (2 * PADDING);
     return frame;
@@ -256,6 +261,7 @@
 
 - (CGSize)contentSizeForPagingScrollView {
     // We have to use the paging scroll view's bounds to calculate the contentSize, for the same reason outlined above.
+    
     CGRect bounds = pagingScrollView.bounds;
     return CGSizeMake(bounds.size.width * [self imageCount], bounds.size.height);
 }
