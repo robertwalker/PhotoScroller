@@ -87,7 +87,8 @@
     CGRect pagingScrollViewFrame = [self frameForPagingScrollView];
     pagingScrollView = [[UIScrollView alloc] initWithFrame:pagingScrollViewFrame];
     pagingScrollView.pagingEnabled = YES;
-    pagingScrollView.backgroundColor = [UIColor blackColor];
+    //pagingScrollView.backgroundColor = [UIColor blackColor];
+    pagingScrollView.backgroundColor = [UIColor redColor]; // Filled with red for demo purposes
     pagingScrollView.showsVerticalScrollIndicator = NO;
     pagingScrollView.showsHorizontalScrollIndicator = NO;
     pagingScrollView.contentSize = [self contentSizeForPagingScrollView];

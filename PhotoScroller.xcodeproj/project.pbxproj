@@ -11,8 +11,6 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		9FA8DAF21219E2F500415299 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA8DAEE1219E2F500415299 /* MainWindow.xib */; };
-		9FA8DAF31219E2F500415299 /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA8DAF01219E2F500415299 /* PhotoViewController.xib */; };
 		9FA8DE231219E32D00415299 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FA8DAF51219E32D00415299 /* Default.png */; };
 		9FA8DE241219E32D00415299 /* Lake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FA8DAF71219E32D00415299 /* Lake.jpg */; };
 		9FA8DE251219E32D00415299 /* Shed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FA8DAF81219E32D00415299 /* Shed.jpg */; };
@@ -830,6 +828,7 @@
 		9FA8E1601219E42F00415299 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8E15B1219E42F00415299 /* PhotoViewController.m */; };
 		9FA8E1611219E42F00415299 /* TilingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8E15D1219E42F00415299 /* TilingView.m */; };
 		B6152BC5156AC8A000F12496 /* README.textile in Resources */ = {isa = PBXBuildFile; fileRef = B6152BC4156AC8A000F12496 /* README.textile */; };
+		B6FA92E0156FEB4300EE7A69 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FA92DE156FEB4300EE7A69 /* MainStoryboard_iPhone.storyboard */; };
 		C9A438F211ADDDAC00EF1D55 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A438F111ADDDAC00EF1D55 /* QuartzCore.framework */; };
 		CB031AE711B9507100B70177 /* ImageData.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB031AE611B9507100B70177 /* ImageData.plist */; };
 /* End PBXBuildFile section */
@@ -841,8 +840,6 @@
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* PhotoScroller_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoScroller_Prefix.pch; sourceTree = "<group>"; };
-		9FA8DAEF1219E2F500415299 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		9FA8DAF11219E2F500415299 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PhotoViewController.xib; sourceTree = "<group>"; };
 		9FA8DAF51219E32D00415299 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		9FA8DAF71219E32D00415299 /* Lake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lake.jpg; sourceTree = "<group>"; };
 		9FA8DAF81219E32D00415299 /* Shed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Shed.jpg; sourceTree = "<group>"; };
@@ -1664,6 +1661,7 @@
 		9FA8E15C1219E42F00415299 /* TilingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TilingView.h; sourceTree = "<group>"; };
 		9FA8E15D1219E42F00415299 /* TilingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TilingView.m; sourceTree = "<group>"; };
 		B6152BC4156AC8A000F12496 /* README.textile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.textile; sourceTree = "<group>"; };
+		B6FA92DF156FEB4300EE7A69 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = SOURCE_ROOT; };
 		C9A438F111ADDDAC00EF1D55 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CB031AE611B9507100B70177 /* ImageData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ImageData.plist; sourceTree = "<group>"; };
 		CB6BD26C11FF73C200FF3374 /* PhotoScroller-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PhotoScroller-Info.plist"; sourceTree = "<group>"; };
@@ -1720,8 +1718,6 @@
 				9FA8DAF41219E32D00415299 /* Images */,
 				CB031AE611B9507100B70177 /* ImageData.plist */,
 				CB6BD26C11FF73C200FF3374 /* PhotoScroller-Info.plist */,
-				9FA8DAEE1219E2F500415299 /* MainWindow.xib */,
-				9FA8DAF01219E2F500415299 /* PhotoViewController.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -2577,6 +2573,7 @@
 			children = (
 				9FA8E1561219E42F00415299 /* AppDelegate.h */,
 				9FA8E1571219E42F00415299 /* AppDelegate.m */,
+				B6FA92DE156FEB4300EE7A69 /* MainStoryboard_iPhone.storyboard */,
 				9FA8E15A1219E42F00415299 /* PhotoViewController.h */,
 				9FA8E15B1219E42F00415299 /* PhotoViewController.m */,
 				9FA8E1581219E42F00415299 /* ImageScrollView.h */,
@@ -2641,8 +2638,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB031AE711B9507100B70177 /* ImageData.plist in Resources */,
-				9FA8DAF21219E2F500415299 /* MainWindow.xib in Resources */,
-				9FA8DAF31219E2F500415299 /* PhotoViewController.xib in Resources */,
 				9FA8DE231219E32D00415299 /* Default.png in Resources */,
 				9FA8DE241219E32D00415299 /* Lake.jpg in Resources */,
 				9FA8DE251219E32D00415299 /* Shed.jpg in Resources */,
@@ -3456,6 +3451,7 @@
 				9FA8E14D1219E32E00415299 /* Tree_500_6_9.png in Resources */,
 				9FA8E14E1219E32E00415299 /* iTunesArtwork in Resources */,
 				B6152BC5156AC8A000F12496 /* README.textile in Resources */,
+				B6FA92E0156FEB4300EE7A69 /* MainStoryboard_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3477,20 +3473,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9FA8DAEE1219E2F500415299 /* MainWindow.xib */ = {
+		B6FA92DE156FEB4300EE7A69 /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9FA8DAEF1219E2F500415299 /* en */,
+				B6FA92DF156FEB4300EE7A69 /* en */,
 			);
-			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		9FA8DAF01219E2F500415299 /* PhotoViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9FA8DAF11219E2F500415299 /* en */,
-			);
-			name = PhotoViewController.xib;
+			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

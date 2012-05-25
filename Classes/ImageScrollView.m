@@ -62,6 +62,7 @@
 - (id)initWithFrame:(CGRect)frame
 {
     if ((self = [super initWithFrame:frame])) {
+        self.backgroundColor = [UIColor greenColor]; // Filled with green for demo purposes
         self.showsVerticalScrollIndicator = NO;
         self.showsHorizontalScrollIndicator = NO;
         self.bouncesZoom = YES;
