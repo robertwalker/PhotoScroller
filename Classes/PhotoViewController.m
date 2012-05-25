@@ -81,8 +81,10 @@
 
 #pragma mark - View loading and unloading
 
-- (void)loadView 
-{    
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
     // Step 1: make the outer paging scroll view
     CGRect pagingScrollViewFrame = [self frameForPagingScrollView];
     pagingScrollView = [[UIScrollView alloc] initWithFrame:pagingScrollViewFrame];
@@ -93,7 +95,7 @@
     pagingScrollView.showsHorizontalScrollIndicator = NO;
     pagingScrollView.contentSize = [self contentSizeForPagingScrollView];
     pagingScrollView.delegate = self;
-    self.view = pagingScrollView;
+    [self.view addSubview:pagingScrollView];
     
     // Step 2: prepare to tile content
     recycledPages = [[NSMutableSet alloc] init];
